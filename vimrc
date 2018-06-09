@@ -108,6 +108,8 @@ nmap <Leader>nu :setlocal nu!<CR>
 
 "Tagbar
 nmap <Leader>t :TagbarToggle<CR>
+let g:tagbar_left=1
+let g:tagbar_width=23
 "NERDTree
 nmap <Leader>nt :NERDTreeToggle<CR>
 let NERDTreeWinSize=23
@@ -117,13 +119,13 @@ let g:UltiSnipsExpandTrigger="<Tab>j"
 let g:UltiSnipsJumpForwardTrigger="<c-f>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 "vim-go
-let g:go_fmt_command = "goimports"
-let g:go_gocode_unimported_packages = 1
-let g:go_auto_type_info = 1
-let g:go_metalinter_autosave = 1
-let g:go_metalinter_autosave_enabled = ['vet']
-let g:go_metalinter_enabled = ['megacheck']
+let g:go_fmt_command="goimports"
+let g:go_gocode_unimported_packages=1
+let g:go_auto_type_info=1
+let g:go_metalinter_autosave=1
+let g:go_metalinter_autosave_enabled=['vet']
+let g:go_metalinter_enabled=['megacheck']
 "emmet
-let g:user_emmet_leader_key = '<Tab>'
-let g:user_emmet_install_command = 0
-let g:user_emmet_mode = 'iv'
+let g:user_emmet_leader_key='<Tab>'
+let g:user_emmet_install_command=0
+let g:user_emmet_mode='iv'
