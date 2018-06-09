@@ -74,6 +74,10 @@ vmap ,, <Esc>
 nmap go o<Esc>
 nmap gO O<Esc>
 "窗口
+nmap h <C-w>h
+nmap j <C-w>j
+nmap k <C-w>k
+nmap l <C-w>l
 nmap <M-h> <C-w>h
 nmap <M-j> <C-w>j
 nmap <M-k> <C-w>k
