@@ -41,6 +41,11 @@ autocmd Filetype *
 "vim-plug
 call plug#begin('~/.vim/plugged')
 Plug 'KeitaNakamura/neodark.vim'
+Plug 'posva/vim-vue'
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
 call plug#end()
 
 "主题
@@ -74,14 +79,14 @@ vmap ,, <Esc>
 nmap go o<Esc>
 nmap gO O<Esc>
 "窗口
-nmap h <C-w>h
-nmap j <C-w>j
-nmap k <C-w>k
-nmap l <C-w>l
-nmap <M-h> <C-w>h
-nmap <M-j> <C-w>j
-nmap <M-k> <C-w>k
-nmap <M-l> <C-w>l
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
+nmap <C-S-h> <C-w>H
+nmap <C-S-j> <C-w>J
+nmap <C-S-k> <C-w>K
+nmap <C-S-l> <C-w>L
 "内置补全
 imap <Tab>o <C-x><C-o>
 imap <Tab>f <C-x><C-f>
@@ -129,3 +134,9 @@ let g:go_metalinter_enabled=['megacheck']
 let g:user_emmet_leader_key='<Tab>'
 let g:user_emmet_install_command=0
 let g:user_emmet_mode='iv'
+"vim-vue
+autocmd FileType vue syntax sync fromstart
+"LanguageClient-neovim
+let g:LanguageClient_serverCommands = {
+    \ 'vue': ['vls']
+    \ }
