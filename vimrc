@@ -83,10 +83,10 @@ nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
-nmap <C-S-h> <C-w>H
-nmap <C-S-j> <C-w>J
-nmap <C-S-k> <C-w>K
-nmap <C-S-l> <C-w>L
+nmap <C-left> <C-w>H
+nmap <C-down> <C-w>J
+nmap <C-up> <C-w>K
+nmap <C-right> <C-w>L
 "内置补全
 imap <Tab>o <C-x><C-o>
 imap <Tab>f <C-x><C-f>
